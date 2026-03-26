@@ -1,0 +1,44 @@
+# 🛠️ Tier 1 Support & QA - Knowledge Base
+
+## Chapter 1: Computer Foundations & Operating Systems
+*In this chapter, I explored how a computer works "under the hood." Mastering these fundamentals is essential for deep system troubleshooting and identifying the root cause of software failures.*
+
+---
+
+### 1.1 Hardware Components
+To diagnose performance issues, slow systems, or hardware crashes, it is critical to understand the role of each component:
+
+| Component | Analogy | Function |
+| :--- | :--- | :--- |
+| **CPU** | The Brain | Executes all instructions, calculations, and logic operations. |
+| **RAM** | The Workspace | **Volatile Memory.** It holds data for applications running **now**. Once power is lost, RAM is cleared. |
+| **Storage (HDD/SSD)** | The Warehouse | **Non-Volatile.** This is where files, OS files, and applications are saved permanently. |
+
+---
+
+### 1.2 Number Systems & Data Representation
+Computers communicate using numbers, not words. Understanding these systems is key to reading error codes, memory addresses, and network configurations:
+
+*   **Binary (Base 2):** Consists of `0` and `1`. This is the fundamental language of all digital hardware.
+*   **Hexadecimal (Base 16):** A human-friendly way to represent binary. Used for **Memory Addresses**, **MAC Addresses**, and **Error Codes** (e.g., `0x0045F`).
+*   **Unicode / ASCII:** The "Universal Dictionary" that translates numeric values into the characters and text we see on our screens.
+
+---
+
+### 1.3 Operating System & Security Layers
+The Operating System (OS) uses "Protection Rings" to ensure system stability and security:
+
+#### 🔹 User Mode (Ring 3)
+*   Where regular applications like Chrome, Word, or VS Code run.
+*   Applications have **limited permissions** and cannot access hardware directly.
+*   **Insight:** If an app crashes here, it is isolated. The computer continues to run normally.
+
+#### 🔹 Kernel Mode (Ring 0)
+*   The "Heart" of the OS. 
+*   Has **full, unrestricted access** to the hardware and memory.
+*   **Insight:** If a driver or a core OS component fails here, it results in a **Blue Screen of Death (BSOD)** because the system's integrity is compromised.
+
+---
+
+### 💡 Why this matters for QA & Support
+> "By understanding the difference between **User Mode** and **Kernel Mode**, I can quickly determine if a bug is a simple application failure or a critical system/driver issue. Knowing the **Hexadecimal** system allows me to interpret logs and memory dumps that others might find confusing."
