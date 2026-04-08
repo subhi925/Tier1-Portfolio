@@ -1,0 +1,54 @@
+# 🚀 Tier 1 & 2 System Administration Portfolio
+**By Subhi Mohammed Hamed**
+
+This repository serves as a professional documentation of my technical journey in building, managing, and securing Enterprise-grade IT infrastructures. It covers a full-stack of System Administration skills including Windows Server, Networking, Linux, and Automation.
+
+---
+
+## 🛠️ Phase 1: Windows Server 2022 & Active Directory Infrastructure
+
+### **Objective**
+To transform a standalone server into a centralized Identity and Access Management (IAM) hub using Microsoft Active Directory. This forms the foundation for managing users, computers, and security policies across an enterprise network.
+
+### **Technical Stack & Environment**
+* **Virtualization:** VMware Workstation Pro.
+* **Operating System:** Windows Server 2022 Standard (Desktop Experience).
+* **Network Role:** Primary Domain Controller (PDC).
+* **Core Services:** AD DS (Active Directory Domain Services), DNS (Domain Name System).
+
+### **Key Achievements & Implementation Details**
+
+1. **Virtualization Optimization:**
+   * Configured the VM environment with **VMware Tools** to ensure high-performance driver support, seamless mouse integration, and shared clipboard functionality.
+2. **Enterprise Naming Conventions:**
+   * Performed a system **Rename** to `DC-SRV-01` (Host: DC) prior to promotion, adhering to professional naming standards for server identification.
+3. **Active Directory Promotion:**
+   * Successfully promoted the server to a **Domain Controller** for the forest: `SUBHCOPM.LOCAL`.
+   * Installed and configured the **NTDS Database** and **SYSVOL** folders for centralized data storage and policy replication.
+4. **Network Infrastructure:**
+   * Configured the **DNS Role** to handle internal name resolution, ensuring that all domain objects can communicate via Hostnames rather than just IP addresses.
+
+### **Visual Documentation**
+
+#### 🔐 Domain Authentication Success
+The screenshot below confirms the successful promotion. The system now authenticates users against the `SUBHCOPM` domain rather than the local machine database.
+
+<img width="1919" height="1079" alt="Screenshot 2026-04-08 140400" src="https://github.com/user-attachments/assets/0e69c532-e41c-4fdb-abef-9d94ae35fa26" />
+
+
+#### 🟢 System Health & Roles
+A look at the **Server Manager Dashboard** showing all core roles (AD DS, DNS, File Services) in a healthy, "Green" state.
+
+<img width="1917" height="1079" alt="Screenshot 2026-04-08 140612" src="https://github.com/user-attachments/assets/274fcada-ec0e-4270-b331-b7bc8ec483ca" />
+
+
+---
+
+## 📈 Next Steps (In Progress)
+- [ ] **Phase 2:** Active Directory Objects (Users, Groups, OUs).
+- [ ] **Phase 3:** Group Policy Objects (GPO) for centralized security hardening.
+- [ ] **Phase 4:** Linux Server Integration & CLI Management.
+- [ ] **Phase 5:** Automation via PowerShell & Python scripts.
+
+---
+📫 **Contact:** [subhihamed88@gmail.com/[LinkedIn Link](https://www.linkedin.com/in/subhi-mouhammed-hamed-223410360/)]
